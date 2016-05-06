@@ -19,7 +19,7 @@ GaleXtra incluye la instalacion (parcial) de Tree-Tagger
 COMO SE INSTALA
 
 (1)
-> tar  xzvf  galeXtra.tgz
+> git clone https://github.com/gamallo/galeXtra.git
 
 (2)
 > sh install-galeXtra.sh
