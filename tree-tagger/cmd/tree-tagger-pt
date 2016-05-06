@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=./bin
+CMD=./cmd
+LIB=./lib
+
+TOKENIZER=${BIN}/separate-punctuation
+TAGGER=${BIN}/tree-tagger
+ABBR_LIST=${LIB}/portuguese-abbreviations
+ENTITIES=${BIN}/NomesPropriosComPrep.perl
+PARFILE=${LIB}/pt.par
+
+# put all on one line
+cat $* |
+
+#proper noun identification:
+$ENTITIES 5 |
+
+#prepare for tokenizer
+sed "s/\([\)\"\'\?\!]\)\([\.\,\;\:]\)/ \1 \2/g" |
+
+# do tokenization
+$TOKENIZER +1 +s +l $ABBR_LIST |
+# remove empty lines
+grep -v '^$' |
+
+# tagging
+$TAGGER $PARFILE -token -lemma -sgml
+
