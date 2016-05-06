@@ -12,7 +12,7 @@
 # Config
 ############################
 
-GALEEXTRA_DIR="./galeXtra-3.0"
+GALEEXTRA_DIR="./galeXtra"
 PROGS=$GALEEXTRA_DIR"/scripts"
 
 ############################
@@ -34,7 +34,7 @@ FILTER="$PROGS/filtrar-freeling.perl"
 # Config de Treetagger
 ############################
 
-TREETAGGER="./tree-tagger"
+TREETAGGER="./tree-tagger/cmd/tree-tagger"
 
 ############################
 # Functions

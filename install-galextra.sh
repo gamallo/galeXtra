@@ -13,7 +13,7 @@ done
 for file in extractorTermos.sh
 do
     awk '$0=="TREETAGGER=\"./tree-tagger\""{print "TREETAGGER=\"'`pwd`'/tree-tagger/cmd/tree-tagger\"";next}\
-         $0=="GALEEXTRA_DIR=\"./galeXtra-3.0\""{print "GALEEXTRA_DIR=\"'`pwd`'\"";next}\
+         $0=="GALEEXTRA_DIR=\"./galeXtra\""{print "GALEEXTRA_DIR=\"'`pwd`'\"";next}\
         {print}' $file > $file.tmp;
     mv $file.tmp $file;
 done
