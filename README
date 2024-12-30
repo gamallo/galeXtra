@@ -85,3 +85,8 @@ El sistema selecciona aquellas expresiones que ocurren en el corpus con una frec
 (4) Ordenación
 
 Una vez seleccionada la lista de los candidatos a término, el sistema la ordena de mayor a menor utilizando una medida de asociación estadística. Se puede escoger entre 5 medidas: coocurrencias (cooc), loglike (log), ji-cuadrado (chi), información mutua (mi) o SCP (scp). 
+
+PUBLICACIONES ASOCIADAS:
+* Barcala M., E. Domínguez-Noya, P. Gamallo, M.López, E. Moscoso, G. Rojo, P. Santalla, S. Sotelo. (2007). A Corpus and Lexical Resources for Multi-word Terminology Extraction in the Field of Economy, 3rd Language & Technology Conference(LeTC'2007), Poznan, Poland (355-359). 
+
+* Barcala, Mario, Eva Domínguez, Pablo Gamallo, Marisol López, Eduardo Miguel Moscoso, Guillermo Rojo, María Paula Santalla del Río, Susana Sotelo (2007). "El Proyecto Gari-Coter en el Seno del Proyecto RICOTERM2". Procesamiento del Lenguaje Natural, 39.
